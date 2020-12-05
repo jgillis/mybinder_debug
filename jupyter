@@ -1,5 +1,5 @@
 #!/bin/bash
 
-echo $@
+/opt/conda/bin/jupyter $@
 
-sleep 60
+echo $@ > foo.txt
