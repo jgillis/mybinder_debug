@@ -1,6 +1,5 @@
-FROM ubuntu:focal
+FROM jupyter/base-notebook:4d19a9839c05
 
 COPY jupyter /
-RUN chmod +x jupyter
 
 ENV PATH=/
