@@ -1,11 +1,14 @@
 #!/bin/bash
 
+exit 1
+
 echo "debug"
 
 echo $@ > /home/jovyan/work/foo.txt
 echo $USER >> /home/jovyan/work/foo.txt
 echo $HOME >> /home/jovyan/work/foo.txt
 
+chown $USER /home/jovyan/work/foo.txt
 chmod a+r /home/jovyan/work/foo.txt
 
 /opt/conda/bin/jupyter_old $@
