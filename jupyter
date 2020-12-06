@@ -1,6 +1,13 @@
 #!/bin/bash
 
-/opt/conda/bin/jupyter $@
+echo "debug"
 
 echo $@ > /home/jovyan/work/foo.txt
+echo $USER >> /home/jovyan/work/foo.txt
 echo $HOME >> /home/jovyan/work/foo.txt
+
+chomd a+r /home/jovyan/work/foo.txt
+
+/opt/conda/bin/jupyter $@
+
+
