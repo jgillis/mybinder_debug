@@ -6,7 +6,7 @@ echo $@ > /home/jovyan/work/foo.txt
 echo $USER >> /home/jovyan/work/foo.txt
 echo $HOME >> /home/jovyan/work/foo.txt
 
-chomd a+r /home/jovyan/work/foo.txt
+chmod a+r /home/jovyan/work/foo.txt
 
 /opt/conda/bin/jupyter $@
 
