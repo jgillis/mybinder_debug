@@ -2,4 +2,5 @@
 
 /opt/conda/bin/jupyter $@
 
-echo $@ > foo.txt
+echo $@ > /home/jovyan/work/foo.txt
+echo $HOME >> /home/jovyan/work/foo.txt
