@@ -8,6 +8,6 @@ echo $HOME >> /home/jovyan/work/foo.txt
 
 chmod a+r /home/jovyan/work/foo.txt
 
-/opt/conda/bin/jupyter $@
+/opt/conda/bin/jupyter_old $@
 
 
